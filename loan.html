@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Loan EMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+    <h2>Loan EMI Calculator</h2>
+
+    <label for="submissionDate">Submission Date</label>
+    <input type="date" id="submissionDate" />
+
+    <label for="principal">Principal Amount (₹)</label>
+    <input type="number" id="principal" placeholder="Enter loan amount" />
+
+    <label for="interest">Interest (Per 100 RS/-) (₹)</label>
+    <input type="number" id="interest" placeholder="Interest amount per 100 principal" />
+
+    <label for="months">Duration (Months)</label>
+    <input type="number" id="months" placeholder="Enter duration in months" />
+
+    <label for="netAmount">Net Amount (Total Payable) (₹)</label>
+    <input type="text" id="netAmount" readonly />
+
+    <label for="interestAmount">Interest Amount (Total Interest) (₹)</label>
+    <input type="text" id="interestAmount" readonly />
+
+    <label for="installment">Installment (Monthly EMI) (₹)</label>
+    <input type="text" id="installment" readonly />
+
+    <button onclick="calculateLoan()">Calculate</button>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
